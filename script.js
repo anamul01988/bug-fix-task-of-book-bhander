@@ -134,6 +134,7 @@ const addToCart = (id) => {
 const addToWishlist = (id) => {
   if (wishlistItems.indexOf(id) === -1) {
     wishlistItems.push(id);
+    console.log(wishlistItems)
   }
 };
 
@@ -148,6 +149,7 @@ const displayCart = () => {
 };
 
 const displayWishlist = () => {
+  document.getElementById("wishlist").innerHTML = "";
   const wishlist = getWishlistItems();
   console.log(wishlist);
 
