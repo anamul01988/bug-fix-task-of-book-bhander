@@ -88,6 +88,7 @@ const showBooks = (books) => {
 };
 
 const createCard = (book) => {
+  console.log(book)
   const div = document.createElement("div");
   div.classList.add("card");
 
@@ -96,7 +97,7 @@ const createCard = (book) => {
   div.innerHTML = `
   <div class="image-container">
     <img
-      src="${book.Image}"
+      src="${book.image}" //first bug was in image that was Image
       alt=""
     />
     <div class="button-container">
