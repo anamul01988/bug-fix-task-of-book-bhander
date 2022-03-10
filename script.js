@@ -151,8 +151,9 @@ const displayWishlist = () => {
   const wishlist = getWishlistItems();
   console.log(wishlist);
 
-  bookList.forEach((book) => {
+  wishlist.forEach((book) => {
     const div = createCard(book);
     document.getElementById("wishlist").appendChild(div);
   });
 };
+//cntrl a chepe dhore kono function call er jaygay dhore enter caple seikhane niye jabe
