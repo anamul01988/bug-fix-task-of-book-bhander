@@ -92,7 +92,15 @@ const createCard = (book) => {
   const div = document.createElement("div");
   div.classList.add("card");
 
-  let overview = book.overview;
+  // let overview = book.overview;
+  let overview;
+
+  if(book.overview.length > 100 ){
+    console.log("beshi ace")
+    overview = book.overview.slice(0, 100)+ "...";
+  }else{
+    overview = book.overview;
+  }
 
   div.innerHTML = `
   <div class="image-container">
